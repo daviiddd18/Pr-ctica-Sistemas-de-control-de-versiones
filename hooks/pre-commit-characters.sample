@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if git rev-parse --verify HEAD > /dev/null; then
+  against=HEAD
+else
+  against=4b825dc642cb6eb25d103eb3b3e1002f1b7e39e3
+fi
+for file in $(git diff-index --cached --name-only $against); do
+  if [[ $(cat "$file") =~ [áâàéèêíìîóòôúùû] ]]; then
+    echo "ERROR: El archivo $file contiene caracteres extraños."
+    exit 1
+  fi
+done
