@@ -22,10 +22,10 @@ Asegúrate de tener Git instalado en tu sistema. Si no lo tienes, puedes descarg
 
 Antes de comenzar, configura tu nombre y dirección de correo electrónico en Git. Esto se utiliza en tus registros de confirmación:
 
-bash
+```bash
 git config --global user.name "Tu Nombre"
 git config --global user.email "tu@email.com"
-
+```
 ## Clientes de Git
 Puedes utilizar varios clientes Git para gestionar tus repositorios. Algunas opciones populares incluyen:
 
