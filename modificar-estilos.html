@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Despliegue de aplicaciones</title>
+  <meta name="description" content="Descripción del curso">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Nombre del Curso">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="URL del curso">
+  <meta property="og:image" content="ruta/a/imagen.jpg">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
+  <style>
+    header {
+      background-image: url('../new-site/img/cabecera.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      text-align: center;
+      color: #fff; 
+      padding: 0px 0; 
+    }
+   
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Despliegue de aplicaciones</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="modificar-contenido.html">Modificar Contenido HTML</a></li>
+      <li><a href="modificar-estilos.html">Modificar Estilos CSS</a></li>
+      <li><a href="modificar-atributos.html">Modificar Atributos HTML</a></li>
+    </ul>
+  </nav>
+  <main>
+
+    <h2>Modificar Estilos CSS</h2>
+    <p>En esta sección, aprenderemos cómo JavaScript puede cambiar los estilos CSS de un elemento HTML. A continuación, te presentamos un ejemplo en el que se modifica el tamaño de fuente al hacer clic en un botón:</p>
+
+    <p id="estilos-demo">JavaScript puede cambiar el estilo de un elemento HTML.</p>
+    <button type="button" onclick="cambiarEstilos()">Cambiar Estilos</button>
+    <p>En el ejemplo anterior, tenemos un párrafo con el texto "JavaScript puede cambiar el estilo de un elemento HTML.". Al hacer clic en el botón, JavaScript cambia el estilo del párrafo con el script de JavaScript. Esto ilustra cómo JavaScript puede interactuar con elementos HTML y modificar su contenido en tiempo real.</p>
+
+  </main>
+
+  <footer>
+    <p>Derechos de autor &copy; 2023 David Espinós Sanz</p>
+  </footer>
+
+  <script>
+    function cambiarEstilos() {
+      document.getElementById("estilos-demo").style.fontSize = '35px';
+    }
+  </script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Google Analytics: Cambia UA-XXXXX-Y por el ID de tu sitio. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview');
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>
