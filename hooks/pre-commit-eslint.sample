@@ -1,0 +1,12 @@
+#!/bin/bash
+
+eslint_cmd="node_modules/.bin/eslint"
+files=$(git diff-index --cached --name-only HEAD -- '*.html')
+if [ -n "$files" ]; then
+  $eslint_cmd $files
+  if [ $? -ne 0 ]; then
+    echo "ERROR: Se encontraron problemas de formato en los archivos HTML."
+    exit 1
+  fi
+fi
+
