@@ -45,8 +45,7 @@ Para proponer cambios al proyecto, creamos Pull Requests. Los Pull Requests son 
 
 ### Branches
 
-Rama de Desarrollo: Se utilizan para desarrollar nuevas características o correcciones de errores. Cada función o corrección de error se realiza en su propia rama.
-Rama de Producción: La rama principal de producción que refleja el estado actual en producción.
+Utilizamos ramas para el buen desarrollo del proyecto. Cada rama antes del commit se revisa por el equipo para que todo este correcto y no se tengan problemas.
 
 ### Versiones
 
